@@ -1,0 +1,49 @@
+/* Variables*/
+@import "vars";
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    background: $background-main;
+    font-family: $secondary-font;
+    font-size: $font-size;
+    color: $primary-text-color;
+    position: relative;
+}
+.noscroll {
+    overflow: hidden;
+}
+// I have included normalize but still want to reset margins on h tags.
+
+/* Slick Slider */
+@import "vendors/slick.scss";
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/tel";
+@import "blocks/menu";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/slider-top";
+@import "blocks/terms";
+@import "blocks/advantages";
+@import "blocks/feedback";
+@import "blocks/contacts";
+@import "blocks/footer";

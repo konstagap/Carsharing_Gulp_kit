@@ -1,0 +1,53 @@
+.feedback {
+    padding: 100px 0;
+    background-color: $background-brand;
+    &__title {
+        @extend %title;
+        color: $secondary-text-color;
+        margin-bottom: 70px;
+    }
+
+    .slick-list {
+        padding: 30px 20px;
+    }
+    .slick-dots {
+        margin-top: 40px;
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+        button {
+            outline: none;
+            cursor: pointer;
+            font-size: 0;
+            border-radius: 50%;
+            background-color: $background-accent;
+            width: 8px;
+            height: 8px;
+            border: none;
+            margin-right: 10px;
+        }
+        .slick-active button {
+            height: 16px;
+            width: 16px;
+        }
+    }
+
+    &__slider-item {
+        margin: 0 30px;
+        outline: none;
+        text-align: center;
+        padding: 46px 30px;
+        @extend %card-border-scale;
+        border-color: $background-accent;
+    }
+    &__slider-name {
+        @extend %title;
+        color: $secondary-text-color;
+        margin-bottom: 47px;
+    }
+    &__slider-text {
+        @extend %text;
+        color: $secondary-text-color;
+    }
+}

@@ -1,0 +1,15 @@
+.tel {
+    &__number {
+        border-bottom: 1px solid transparent;
+        transition: $transition;
+        &:hover {
+            border-bottom: 1px solid $secondary-text-color;
+        }
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 1.125rem;
+        color: $secondary-text-color;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}

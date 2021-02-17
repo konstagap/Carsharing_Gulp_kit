@@ -1,0 +1,30 @@
+.header {
+    background-color: $background-brand;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    @media (max-width: 832px) {
+        .logo {
+            order: 1;
+        }
+        .tel {
+            order: 2;
+        }
+        .nav {
+            order: 4;
+        }
+        .menu {
+            order: 3;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.btn {
+    text-align: center;
+    display: inline-block;
+    background-color: $background-accent;
+    color: $secondary-text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 18px;
+    border: 1px solid $background-accent;
+    transition: $transition;
+    &:hover {
+        background-color: $background-main;
+        color: $background-accent;
+    }
+}
